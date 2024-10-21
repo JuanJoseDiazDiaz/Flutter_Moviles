@@ -18,40 +18,64 @@ class EjemploLayout extends StatelessWidget {
       //   leading: Text("Volver"),
       // ),
       // backgroundColor: Colors.blue,
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.blueGrey,
       body: Column(
          // mainAxisSize: MainAxisSize.max,
-        // verticalDirection: VerticalDirection.up,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        // crossAxisAlignment: CrossAxisAlignment.center,
+         // verticalDirection: VerticalDirection.up,
+        // mainAxisAlignment: MainAxisAlignment.center,
+
         children: [
-          Row(
+          Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 width: 100,
                 height: 100,
                 color: Colors.grey,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 10,
+                      height: 10,
+                      color: Colors.black,
+                    )
+                  ],
+                ),
               ),
               Container(
                 width: 100,
                 height: 100,
-                color: Colors.blue,
+                color: Colors.blueAccent,
+                child: Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: 10,
+                      height: 10,
+                      color: Colors.black,
+                    ),Container(
+                      width: 10,
+                      height: 10,
+                      color: Colors.black,
+                    )
+                  ],
+                ),
               ),
             ],
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 width: 100,
                 height: 100,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ],
           ),
-
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 width: 100,
@@ -61,7 +85,7 @@ class EjemploLayout extends StatelessWidget {
               Container(
                 width: 100,
                 height: 100,
-                color: Colors.yellow,
+                color: Colors.white,
               ),
             ],
           ),

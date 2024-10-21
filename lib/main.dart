@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first_app/ejemploWitget.dart';
 import 'package:flutter_first_app/ejemplo_layout.dart';
+import 'package:flutter_first_app/ejemplo_text_button.dart';
+
+import 'ejemplo_box_decoration.dart';
+import 'ejemplostack.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const EjemploLayout(),
+      home: const EjemploTextButton(),
     );
   }
 }
