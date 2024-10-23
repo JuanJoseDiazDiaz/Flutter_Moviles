@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first_app/ejemploWitget.dart';
+import 'package:flutter_first_app/ejemplo_composing_card.dart';
 import 'package:flutter_first_app/ejemplo_layout.dart';
 import 'package:flutter_first_app/ejemplo_text_button.dart';
 
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const EjemploTextButton(),
+      home: const EjemploComposingCard(),
     );
   }
 }
