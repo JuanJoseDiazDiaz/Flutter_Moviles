@@ -12,7 +12,6 @@ class EjemploComposingCard extends StatelessWidget{
          Column(
            mainAxisAlignment: MainAxisAlignment.center,
            children: [
-
              Row(
                mainAxisAlignment: MainAxisAlignment.center,
                children: [
@@ -20,14 +19,14 @@ class EjemploComposingCard extends StatelessWidget{
                    height: 500,
                    width: 500,
                    color: Colors.black,
-                   child: Column(
-                     crossAxisAlignment: CrossAxisAlignment.start,
-                     children: [
+                   child: 
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                        Positioned(
-                         
-                           child: 
-                           Text("Sci-fi",style: TextStyle(color: Colors.white, fontSize: 20)),
-                       )
+                            child:
+                            Text("Sci-fi",style: TextStyle(color: Colors.white, fontSize: 20)),
+                        )
                      ],
                    ),
                  )
