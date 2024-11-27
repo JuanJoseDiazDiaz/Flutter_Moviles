@@ -26,6 +26,7 @@ class _ListasGesturesState extends State<ListasGestures> {
         title: Text(
           'The cursor is here: (${x.toStringAsFixed(2)}, ${y.toStringAsFixed(2)})',
         ),
+        backgroundColor: Colors.blue,
       ),
         body: Column(
       children: [
@@ -33,7 +34,7 @@ class _ListasGesturesState extends State<ListasGestures> {
           height: double.maxFinite,
           child: Listener(
             onPointerMove: _updateLocation,
-            child: listaDinamica(),
+            child: listaDinamica2(),
           ),
         ),
       ],
@@ -55,5 +56,19 @@ class _ListasGesturesState extends State<ListasGestures> {
     );
   }
 
+  ListView listaDinamica2() {
+    return ListView.builder(
+      itemCount: 10, //Si no pongo nada no tiene límite
+      itemBuilder: (context, index) {
+        return ListTile(
+          tileColor: index == x?Colors.grey[200]:Colors.transparent,
+          title: Text(
+            "Elemento $index",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
 
+        );
+      },
+    );
+  }
 }
