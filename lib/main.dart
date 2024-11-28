@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_first_app/ActClase_Listas.dart';
-import 'package:flutter_first_app/ejemploWitget.dart';
-import 'package:flutter_first_app/ejemplo_composing_card.dart';
-import 'package:flutter_first_app/ejemplo_layout.dart';
-import 'package:flutter_first_app/ejemplo_text_button.dart';
-import 'package:flutter_first_app/ejemplos_listviews.dart';
-import 'package:flutter_first_app/example_grid.dart';
-import 'package:flutter_first_app/example_scroll.dart';
-import 'package:flutter_first_app/examplerouting.dart';
-import 'package:flutter_first_app/main_point_gestures.dart';
-import 'package:flutter_first_app/scroll_bar.dart';
+import 'package:flutter_first_app/Gestures/ActClase_Listas.dart';
+import 'package:flutter_first_app/Widgets%20-%20Layout/ejemploWitget.dart';
+import 'package:flutter_first_app/Composing-Card/ejemplo_composing_card.dart';
+import 'package:flutter_first_app/Widgets%20-%20Layout/ejemplo_layout.dart';
+import 'package:flutter_first_app/GridView/example_grid.dart';
+import 'package:flutter_first_app/Scrolling-Widgets/example_scroll.dart';
+import 'package:flutter_first_app/Navegator/examplerouting.dart';
+import 'package:flutter_first_app/Gestures/main_point_gestures.dart';
+import 'package:flutter_first_app/Scrolling-Widgets/scroll_bar.dart';
 
-import 'ejemplo_box_decoration.dart';
-import 'ejemplostack.dart';
+import 'Widgets - Layout/ejemplo_box_decoration.dart';
+import 'Widgets - Layout/ejemplostack.dart';
 
 void main() {
   runApp(const MyApp());
